@@ -1,3 +1,7 @@
+/**
+ * Created by parham on 12/15/2016 AD.
+ */
+
 package com.bignerdranch.android.criminalintent;
 
 import android.os.Bundle;
@@ -12,9 +16,6 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 
-/**
- * Created by parham on 12/15/2016 AD.
- */
 
 public class CrimeFragment extends Fragment {
     private Crime mCrime;
@@ -54,6 +55,7 @@ public class CrimeFragment extends Fragment {
 
         mDateButton = (Button) v.findViewById(R.id.crime_date);
         mDateButton.setText(mCrime.getDate().toString());
+        // Disable button for now
         mDateButton.setEnabled(false);
 
         mSolvedCheckBox = (CheckBox) v.findViewById(R.id.crime_solved);
